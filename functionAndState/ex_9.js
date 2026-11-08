@@ -1,11 +1,12 @@
-function min_number(num1, num2, num3) {
-    if (num1 <= num2 && num1 <= num3) {
-        return num1;
+function addAndSubtract(a, b, c) {
+    function sum(a, b) {
+        return a + b;
     }
-    else if (num2 <= num1 && num2 <= num3) {
-        return num2;
+
+    function subtract(sumResult, c) {
+        return sumResult - c;
     }
-    else {
-        return num3;
-    }
+
+    let result = sum(a, b);
+    console.log(subtract(result, c));
 }
